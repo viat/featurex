@@ -1,0 +1,11 @@
+src/VAD.d src/VAD.o: ../src/VAD.cpp ../src/VAD.h \
+ /opt/intel/ipp/6.1.2.051/em64t/include/ipps.h \
+ /opt/intel/ipp/6.1.2.051/em64t/include/ippdefs.h ../src/VIATUtilities.h
+
+../src/VAD.h:
+
+/opt/intel/ipp/6.1.2.051/em64t/include/ipps.h:
+
+/opt/intel/ipp/6.1.2.051/em64t/include/ippdefs.h:
+
+../src/VIATUtilities.h:

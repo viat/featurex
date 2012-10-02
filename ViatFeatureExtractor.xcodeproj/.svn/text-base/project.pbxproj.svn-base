@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E5B15CB1498B71F001160FE /* Array2d_32f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15B61498B71F001160FE /* Array2d_32f.cpp */; };
+		4E5B15CC1498B71F001160FE /* Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15B81498B71F001160FE /* Audio.cpp */; };
+		4E5B15CD1498B71F001160FE /* melFB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15BA1498B71F001160FE /* melFB.cpp */; };
+		4E5B15CE1498B71F001160FE /* parseConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15BC1498B71F001160FE /* parseConfig.cpp */; };
+		4E5B15D01498B71F001160FE /* Stft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15C01498B71F001160FE /* Stft.cpp */; };
+		4E5B15D11498B71F001160FE /* VAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15C21498B71F001160FE /* VAD.cpp */; };
+		4E5B15D21498B71F001160FE /* ViatFeatureExtractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15C41498B71F001160FE /* ViatFeatureExtractor.cpp */; };
+		4E5B15D31498B71F001160FE /* VIATUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15C51498B71F001160FE /* VIATUtilities.cpp */; };
+		4E5B15D41498B71F001160FE /* Wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15C71498B71F001160FE /* Wave.cpp */; };
+		4E5B15D51498B71F001160FE /* yapHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B15C91498B71F001160FE /* yapHash.cpp */; };
+		4E6C117A1498C5EF00B72C1C /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6C11791498C5EF00B72C1C /* libboost_system-mt.dylib */; };
+		4E6C117C1498C5F900B72C1C /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6C117B1498C5F900B72C1C /* libboost_thread-mt.dylib */; };
+		4E9D0583154EB68900196968 /* libfwBase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9D0582154EB68900196968 /* libfwBase.dylib */; };
+		4E9D0585154EBA2500196968 /* libfwSignal-1.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9D0584154EBA2500196968 /* libfwSignal-1.3.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4ED7D34C137A8EAF003E2EE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4E5B15B61498B71F001160FE /* Array2d_32f.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Array2d_32f.cpp; path = src/Array2d_32f.cpp; sourceTree = "<group>"; };
+		4E5B15B71498B71F001160FE /* Array2d_32f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Array2d_32f.h; path = src/Array2d_32f.h; sourceTree = "<group>"; };
+		4E5B15B81498B71F001160FE /* Audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Audio.cpp; path = src/Audio.cpp; sourceTree = "<group>"; };
+		4E5B15B91498B71F001160FE /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Audio.h; path = src/Audio.h; sourceTree = "<group>"; };
+		4E5B15BA1498B71F001160FE /* melFB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = melFB.cpp; path = src/melFB.cpp; sourceTree = "<group>"; };
+		4E5B15BB1498B71F001160FE /* melFB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = melFB.h; path = src/melFB.h; sourceTree = "<group>"; };
+		4E5B15BC1498B71F001160FE /* parseConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = parseConfig.cpp; path = src/parseConfig.cpp; sourceTree = "<group>"; };
+		4E5B15BD1498B71F001160FE /* parseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parseConfig.h; path = src/parseConfig.h; sourceTree = "<group>"; };
+		4E5B15C01498B71F001160FE /* Stft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = Stft.cpp; path = src/Stft.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		4E5B15C11498B71F001160FE /* Stft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stft.h; path = src/Stft.h; sourceTree = "<group>"; };
+		4E5B15C21498B71F001160FE /* VAD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VAD.cpp; path = src/VAD.cpp; sourceTree = "<group>"; };
+		4E5B15C31498B71F001160FE /* VAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VAD.h; path = src/VAD.h; sourceTree = "<group>"; };
+		4E5B15C41498B71F001160FE /* ViatFeatureExtractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViatFeatureExtractor.cpp; path = src/ViatFeatureExtractor.cpp; sourceTree = "<group>"; };
+		4E5B15C51498B71F001160FE /* VIATUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = VIATUtilities.cpp; path = src/VIATUtilities.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		4E5B15C61498B71F001160FE /* VIATUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = VIATUtilities.h; path = src/VIATUtilities.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4E5B15C71498B71F001160FE /* Wave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Wave.cpp; path = src/Wave.cpp; sourceTree = "<group>"; };
+		4E5B15C81498B71F001160FE /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wave.h; path = src/Wave.h; sourceTree = "<group>"; };
+		4E5B15C91498B71F001160FE /* yapHash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = yapHash.cpp; path = src/yapHash.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		4E5B15CA1498B71F001160FE /* yapHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = yapHash.h; path = src/yapHash.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4E6C11791498C5EF00B72C1C /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "usr/local/lib/libboost_system-mt.dylib"; sourceTree = SDKROOT; };
+		4E6C117B1498C5F900B72C1C /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "usr/local/lib/libboost_thread-mt.dylib"; sourceTree = SDKROOT; };
+		4E9D0582154EB68900196968 /* libfwBase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfwBase.dylib; path = FrameWave_1.3.1/lib/libfwBase.dylib; sourceTree = "<group>"; };
+		4E9D0584154EBA2500196968 /* libfwSignal-1.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libfwSignal-1.3.1.dylib"; path = "/usr/local/lib/libfwSignal-1.3.1.dylib"; sourceTree = "<absolute>"; };
+		4ED7D34E137A8EAF003E2EE2 /* ViatFeatureExtractor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ViatFeatureExtractor; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ED7D34B137A8EAF003E2EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9D0585154EBA2500196968 /* libfwSignal-1.3.1.dylib in Frameworks */,
+				4E9D0583154EB68900196968 /* libfwBase.dylib in Frameworks */,
+				4E6C117C1498C5F900B72C1C /* libboost_thread-mt.dylib in Frameworks */,
+				4E6C117A1498C5EF00B72C1C /* libboost_system-mt.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E1AFDE21498C71900C7A9C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E9D0584154EBA2500196968 /* libfwSignal-1.3.1.dylib */,
+				4E9D0582154EB68900196968 /* libfwBase.dylib */,
+				4E6C117B1498C5F900B72C1C /* libboost_thread-mt.dylib */,
+				4E6C11791498C5EF00B72C1C /* libboost_system-mt.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4ED7D343137A8EAF003E2EE2 = {
+			isa = PBXGroup;
+			children = (
+				4E5B15C41498B71F001160FE /* ViatFeatureExtractor.cpp */,
+				4E5B15B61498B71F001160FE /* Array2d_32f.cpp */,
+				4E5B15B71498B71F001160FE /* Array2d_32f.h */,
+				4E5B15B81498B71F001160FE /* Audio.cpp */,
+				4E5B15B91498B71F001160FE /* Audio.h */,
+				4E5B15BA1498B71F001160FE /* melFB.cpp */,
+				4E5B15BB1498B71F001160FE /* melFB.h */,
+				4E5B15BC1498B71F001160FE /* parseConfig.cpp */,
+				4E5B15BD1498B71F001160FE /* parseConfig.h */,
+				4E5B15C01498B71F001160FE /* Stft.cpp */,
+				4E5B15C11498B71F001160FE /* Stft.h */,
+				4E5B15C21498B71F001160FE /* VAD.cpp */,
+				4E5B15C31498B71F001160FE /* VAD.h */,
+				4E5B15C51498B71F001160FE /* VIATUtilities.cpp */,
+				4E5B15C61498B71F001160FE /* VIATUtilities.h */,
+				4E5B15C71498B71F001160FE /* Wave.cpp */,
+				4E5B15C81498B71F001160FE /* Wave.h */,
+				4E5B15C91498B71F001160FE /* yapHash.cpp */,
+				4E5B15CA1498B71F001160FE /* yapHash.h */,
+				4E1AFDE21498C71900C7A9C0 /* Frameworks */,
+				4ED7D34F137A8EAF003E2EE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ED7D34F137A8EAF003E2EE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED7D34E137A8EAF003E2EE2 /* ViatFeatureExtractor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ED7D34D137A8EAF003E2EE2 /* ViatFeatureExtractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED7D357137A8EAF003E2EE2 /* Build configuration list for PBXNativeTarget "ViatFeatureExtractor" */;
+			buildPhases = (
+				4ED7D34A137A8EAF003E2EE2 /* Sources */,
+				4ED7D34B137A8EAF003E2EE2 /* Frameworks */,
+				4ED7D34C137A8EAF003E2EE2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViatFeatureExtractor;
+			productName = ViatFeatureExtractor;
+			productReference = 4ED7D34E137A8EAF003E2EE2 /* ViatFeatureExtractor */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ED7D345137A8EAF003E2EE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4ED7D348137A8EAF003E2EE2 /* Build configuration list for PBXProject "ViatFeatureExtractor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4ED7D343137A8EAF003E2EE2;
+			productRefGroup = 4ED7D34F137A8EAF003E2EE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ED7D34D137A8EAF003E2EE2 /* ViatFeatureExtractor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ED7D34A137A8EAF003E2EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5B15CB1498B71F001160FE /* Array2d_32f.cpp in Sources */,
+				4E5B15CC1498B71F001160FE /* Audio.cpp in Sources */,
+				4E5B15CD1498B71F001160FE /* melFB.cpp in Sources */,
+				4E5B15CE1498B71F001160FE /* parseConfig.cpp in Sources */,
+				4E5B15D01498B71F001160FE /* Stft.cpp in Sources */,
+				4E5B15D11498B71F001160FE /* VAD.cpp in Sources */,
+				4E5B15D21498B71F001160FE /* ViatFeatureExtractor.cpp in Sources */,
+				4E5B15D31498B71F001160FE /* VIATUtilities.cpp in Sources */,
+				4E5B15D41498B71F001160FE /* Wave.cpp in Sources */,
+				4E5B15D51498B71F001160FE /* yapHash.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4ED7D355137A8EAF003E2EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					FrameWave_1.3.1,
+					/opt/intel/Compiler/11.1/084/Frameworks/ipp/Headers,
+					/usr/local/Cellar/boost,
+				);
+				LIBRARY_SEARCH_PATHS = /opt/intel/Compiler/11.1/084/Frameworks/ipp/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lfftw3",
+					"-lippiemerged",
+					"-lippremerged",
+					"-lippscemerged",
+					"-lippsemerged",
+					"-lippsremerged",
+					"-lippimerged",
+					"-lipprmerged",
+					"-lippscmerged",
+					"-lippsmerged",
+					"-lippsrmerged",
+					"-lippcore",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4ED7D356137A8EAF003E2EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					FrameWave_1.3.1,
+					/opt/intel/Compiler/11.1/084/Frameworks/ipp/Headers,
+					/usr/local/Cellar/boost,
+				);
+				LIBRARY_SEARCH_PATHS = /opt/intel/Compiler/11.1/084/Frameworks/ipp/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lfftw3",
+					"-lippiemerged",
+					"-lippremerged",
+					"-lippscemerged",
+					"-lippsemerged",
+					"-lippsremerged",
+					"-lippimerged",
+					"-lipprmerged",
+					"-lippscmerged",
+					"-lippsmerged",
+					"-lippsrmerged",
+					"-lippcore",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4ED7D358137A8EAF003E2EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					./FrameWave_1.3.1,
+					/opt/intel/Compiler/11.1/084/Frameworks/ipp/Headers,
+					/usr/local/include/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					/opt/intel/Compiler/11.1/084/Frameworks/ipp/lib,
+					"\"$(SRCROOT)/FrameWave_1.3.1/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4ED7D359137A8EAF003E2EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					./FrameWave_1.3.1,
+					/opt/intel/Compiler/11.1/084/Frameworks/ipp/Headers,
+					/usr/local/include/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					/opt/intel/Compiler/11.1/084/Frameworks/ipp/lib,
+					"\"$(SRCROOT)/FrameWave_1.3.1/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ED7D348137A8EAF003E2EE2 /* Build configuration list for PBXProject "ViatFeatureExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED7D355137A8EAF003E2EE2 /* Debug */,
+				4ED7D356137A8EAF003E2EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED7D357137A8EAF003E2EE2 /* Build configuration list for PBXNativeTarget "ViatFeatureExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED7D358137A8EAF003E2EE2 /* Debug */,
+				4ED7D359137A8EAF003E2EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ED7D345137A8EAF003E2EE2 /* Project object */;
+}
