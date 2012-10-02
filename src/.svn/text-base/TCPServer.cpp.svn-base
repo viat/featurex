@@ -146,15 +146,15 @@ private:
 class TCPServer
 {
 public:
-	TCPServer(const std::string& port) :
-		io_service_(), signals_(io_service_), acceptor_(io_service_, tcp::endpoint(tcp::v4(), atoi(port.c_str())))
+	TCPServer(const std::string& addr, const std::string& port) :
+			io_service_(), signals_(io_service_), acceptor_(io_service_, tcp::endpoint(boost::asio::ip::address::from_string(addr), atoi(port.c_str())))
 	{
 		// Register to handle the signals that indicate when the server should exit.
 		// It is safe to register for the same signal multiple times in a program,
 		// provided all registration for the specified signal is made through Asio.
 		//	signals_.add(SIGTERM);
 		//	signals_.async_wait(boost::bind(&TCPServer::handle_stop, this));
-		std::cout << "Acceptor ready at port " + port + "'!" << std::endl;
+		std::cout << "Acceptor ready at '" + addr + ":" + port + "'!" << std::endl;
 
 		start_accept();
 	}

@@ -57,7 +57,7 @@ void tcpServerWorkerThread(Parameter *param)
 {
 	std::stringstream out;
 	out << param->callxPort;
-	TCPServer* tcpServerWorker = new TCPServer(out.str());
+	TCPServer* tcpServerWorker = new TCPServer(param->callxIpAddress, out.str());
 	tcpServerWorker->run();
 	delete tcpServerWorker;
 }

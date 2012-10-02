@@ -97,6 +97,9 @@ int parseConfig(const char *configfile, Parameter *pParam) {
 		else if (strcmp(optionname, "INDEXD_IP_ADDRESS") == 0)
 			memcpy(pParam->indexdIpAddress, optionvalue, strlen(optionvalue));
 
+		else if (strcmp(optionname, "CALLX_IP_ADDRESS") == 0)
+			memcpy(pParam->callxIpAddress, optionvalue, strlen(optionvalue));
+
 		else if (strcmp(optionname, "WRITE_TO_CSV") == 0)
 			pParam->writeToCsv = (unsigned int) atoi(optionvalue);
 
@@ -107,7 +110,7 @@ int parseConfig(const char *configfile, Parameter *pParam) {
 	// close configuration file
 	fclose(conffile);
 
-	if (!( pParam->windowSize && pParam->stepSize && pParam->callxPort && pParam->declickerThreshold
+	if (!( pParam->windowSize && pParam->stepSize && pParam->callxIpAddress && pParam->callxPort && pParam->declickerThreshold
 			&& pParam->energyThreshold && pParam->hiCut && pParam->indexdIpAddress && pParam->indexdPort
 			&& pParam->loCut && pParam->maxAudioLen && pParam->maxHashLen && pParam->melCoeffs
 			&& pParam->mfccCoeffs && pParam->minAudioLen && pParam->samplerate

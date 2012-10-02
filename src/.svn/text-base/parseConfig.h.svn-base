@@ -25,6 +25,7 @@ typedef struct Parameter{
     int energyThreshold;
     char indexdIpAddress[17];
     int indexdPort;
+    char callxIpAddress[17];
     int callxPort;
     int declickerThreshold;
     int preEmphasizeFactor;
