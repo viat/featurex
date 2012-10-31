@@ -145,6 +145,42 @@ int cutVad_I(double *data, int *dataLen, int threshold)
 }
 
 /*
+ * Voice activity detection based on autocorrelation, inplace operation
+ */
+int cutACFVad_I(Fw32f *data, int *dataLen, int threshold)
+{
+    int idx = AutocorrelationVad(data, *dataLen, threshold);
+
+    if (idx == -1)
+    {
+        idx = 0; // return error ??
+        //        return -1;
+        throw "No Audio found, try a lower threshold";
+    }
+    // debug
+    //cout << idx << endl;
+
+    int len = *dataLen - idx;
+    if (len > 0)
+    {
+        if (len > SAMPLE_RATE * WAV_LEN) // more than 6 seconds of audio after VAD
+        {
+            memmove(data, &data[idx], SAMPLE_RATE * WAV_LEN *sizeof(Fw32f));
+            *dataLen = SAMPLE_RATE * WAV_LEN;
+        }
+        else // less than 6 seconds left
+        {
+            memmove(data, &data[idx], len *sizeof(Fw32f));
+            *dataLen = len;
+           // cout << "Shorter than 6s" << endl;
+        }
+        return 0;
+    }
+    else
+        return -2;
+}
+
+/*
  * Voice activity detection based on autocorrelation
  */
 int AutocorrelationVad(Fw32f *data, int dataLen, int threshold)
@@ -187,39 +223,5 @@ int AutocorrelationVad(Fw32f *data, int dataLen, int threshold)
     return idx;
 }
 
-/*
- * Voice activity detection based on autocorrelation, inplace operation
- */
-int cutACFVad_I(Fw32f *data, int *dataLen, int threshold)
-{
-    int idx = AutocorrelationVad(data, *dataLen, threshold);
 
-    if (idx == -1)
-    {
-        idx = 0; // return error ??
-        //        return -1;
-        throw "No Audio found, try a lower threshold";
-    }
-    // debug
-    //cout << idx << endl;
-
-    int len = *dataLen - idx;
-    if (len > 0)
-    {
-        if (len > SAMPLE_RATE * WAV_LEN) // more than 6 seconds of audio after VAD
-        {
-            memmove(data, &data[idx], SAMPLE_RATE * WAV_LEN *sizeof(Fw32f));
-            *dataLen = SAMPLE_RATE * WAV_LEN;
-        }
-        else // less than 6 seconds left
-        {
-            memmove(data, &data[idx], len *sizeof(Fw32f));
-            *dataLen = len;
-           // cout << "Shorter than 6s" << endl;
-        }
-        return 0;
-    }
-    else
-        return -2;
-}
 

@@ -1,8 +1,25 @@
 /**
- * Parses the configuration file.
- * @param configfile path and filename to configuration file
- * @return TRUE if parsing configuration file succeeded. FALSE if options missing or syntax error.
+ * @file		parseConfig.cpp
+ * @date		May 16, 2011
+ * @author  	Gary Grutzek
+ * @brief		Config file parser
+ * @details		Config file parser
+ *
+ * @copyright  	Copyright (c) 2012 Gary Grutzek<br>
+ * 				Cologne University of Applied Sciences<br>
+ * 				<br>
+ * 				This program is free software: you can redistribute it and/or modify
+ *				it under the terms of the GNU General Public License as published by
+ *				the Free Software Foundation, either version 3 of the License, or
+ * 				(at your option) any later version.<br>
+ *				This program is distributed in the hope that it will be useful,
+ *				but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *				MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *				GNU General Public License for more details.<br>
+ *				You should have received a copy of the GNU General Public License
+ *				along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+
 
 #include "parseConfig.h"
 #include <stdlib.h>
@@ -10,6 +27,7 @@
 #include <errno.h>
 #include <fstream>
 #include <iostream>
+
 
 int parseConfig(const char *configfile, Parameter *pParam) {
 	// test
@@ -97,7 +115,7 @@ int parseConfig(const char *configfile, Parameter *pParam) {
 		else if (strcmp(optionname, "INDEXD_IP_ADDRESS") == 0)
 			memcpy(pParam->indexdIpAddress, optionvalue, strlen(optionvalue));
 
-		else if (strcmp(optionname, "CALLX_IP_ADDRESS") == 0)
+		else if (strcmp(optionname, "c") == 0)
 			memcpy(pParam->callxIpAddress, optionvalue, strlen(optionvalue));
 
 		else if (strcmp(optionname, "WRITE_TO_CSV") == 0)
