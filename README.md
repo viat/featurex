@@ -14,7 +14,8 @@ Different recordings with similar content, e.g. identical words or phrases, or f
 
 The YapHash fingerprint is based on the spectrogram and Mel-frequency-cepstrum-coefficients (MFCC). 
 The sign of the differences in between the frequency bands and the MFCCs form a compact yet robust audio hash.
-The communication with other VIAT system components is done through tcp sockets. It receives the audio data from call extractor (callX) and sends the 
+The communication with other VIAT system components is done through tcp sockets. 
+It receives the audio data from call extractor (callx) and sends the 
 sends the resulting hash to search engine (mld).
 
 ###Usage
