@@ -58,12 +58,13 @@ AudioQ *audioQ;
 using namespace std;  
 using boost::asio::ip::tcp;
 
+// calls boost::sleep 
 void wait(int seconds)
 {
 	boost::this_thread::sleep(boost::posix_time::seconds(seconds));
 }
 
-
+// the tcp socket 
 void tcpServerWorkerThread(Parameter *param)
 {
 	std::stringstream out;
@@ -128,7 +129,9 @@ void audioHash(Parameter *param, HashQ *outputQ)
 			audio = NULL;
 
 		}// end if
+		// TODO: remove me
 		wait(1);
+		// 
 	} // end while(true)
 	delete melBank;
 }
@@ -138,7 +141,7 @@ void socketClient(Parameter *param, HashQ *outputQ){
 	hashQueueData *hash;
 
 	while(true){
-
+		// TODO: remove me
 		wait(1);
 
 		if (param->debugLevel > 2)
@@ -227,22 +230,19 @@ int main(int argc, const char * argv[]) {
 			return -1;
 		}
 
-		// get threadsafe queues
+		// setup threadsafe queues
 		audioQ = new AudioQ();
 		HashQ *hashQ = new HashQ();
 
 		// start threads
-		//boost::thread socketServerThread(socketServer, &param, audioQ);
 		boost::thread tsThread(tcpServerWorkerThread, &param);
 		boost::thread hashThread(audioHash, &param, hashQ);
 		boost::thread socketClientThread(socketClient, &param, hashQ);
 		//
-	//	socketServerThread.join();
 		tsThread.join();
 		hashThread.join();
 		socketClientThread.join();
 
-		//
 		cout << "you should never read this" << endl;
 
 	} catch (const char* err) {
