@@ -42,13 +42,13 @@ public:
 	Stft(const Audio& audio, int windowSize, int feedRate);
 
 	/**
-	 *
+	 * calc stft from audio file
 	 * @param audio the audio object
 	 * @param windowSize the size of the frames/windows in samples
 	 * @param feedRate the step size of the frames in samples
 	 * @return error
 	 */
-    int calcStft(const Audio &audio, int windowSize, int feedRate);	// calc stft from audio file
+    int calcStft(const Audio &audio, int windowSize, int feedRate); 
 
     // destructor
     ~Stft();
@@ -69,7 +69,7 @@ private:
 void WinHamming_I(double* data, int length);
 
 /**
- *
+ * combine some functions for convenience and speedup 
  * @param inAudio audio samples as 32 bit float	to be multriplied with hamming window
  * @param windowedAudio windowed audio samples
  * @param fftLen length of fft (next power of 2)
@@ -78,7 +78,7 @@ void WinHamming_I(double* data, int length);
 void CopyWithHamming(float *inAudio, double* windowedAudio, int fftLen, int windowSize);
 
 /**
- *
+ * combine some functions for convenience and speedup 
  * @param inAudio
  * @param windowedAudio
  * @param hamming
