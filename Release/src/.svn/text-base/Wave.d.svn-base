@@ -1,3 +1,0 @@
-src/Wave.d src/Wave.o: ../src/Wave.cpp ../src/Wave.h
-
-../src/Wave.h:

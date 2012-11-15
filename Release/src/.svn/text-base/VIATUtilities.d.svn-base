@@ -1,4 +1,0 @@
-src/VIATUtilities.d src/VIATUtilities.o: ../src/VIATUtilities.cpp \
- ../src/VIATUtilities.h
-
-../src/VIATUtilities.h:

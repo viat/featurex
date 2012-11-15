@@ -1,4 +1,0 @@
-src/parseConfig.d src/parseConfig.o: ../src/parseConfig.cpp \
- ../src/parseConfig.h
-
-../src/parseConfig.h:
