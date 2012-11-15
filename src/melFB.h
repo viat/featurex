@@ -32,7 +32,7 @@ class MelFb{
 public:
 
 	/**
-	 *
+	 * Constructor
 	 * @param fftSize size of the FFT, actually next power of 2 is used
 	 * @param numFilterBanks number of bands for the mel filter bank
 	 * @param locut lowest frequency of filter bank
