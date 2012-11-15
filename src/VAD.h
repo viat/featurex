@@ -27,7 +27,7 @@
 #include "fwSignal.h"
 
 /**
- *
+ * calculate energy of each frame and writes energy vector to first arg 
  * @param energy calculated energy in windows
  * @param data input audio data
  * @param dataLen number of audio samples
