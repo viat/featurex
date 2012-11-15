@@ -58,7 +58,7 @@ public:
     int NoOfWindows;
 
 private:
-	//IppStatus status;
+
 };
 
 /**
