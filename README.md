@@ -2,7 +2,7 @@ featurex - Feature Extractor
 ============================
 featureX integrates YapHash into the VIAT eco-system. 
 YapHash (Yet another Perceptual Hash) is a perceptual fingerprint for audio identification purposes. 
-Although YapHash has been developed for detecting telephone-spam and therefore optimized for speech content, 
+Although YapHash has been developed for detecting telephone-spam and therefore is optimized for speech content, 
 it could also be used for music.  
 
 Standard cryptographic hash functions have the property that minimal alterations of input data 
