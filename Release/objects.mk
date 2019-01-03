@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lboost_system -lboost_thread -lfftw3 -lfwBase -lfwSignal
+LIBS := -lboost_system -lboost_thread -lfftw3 -lfwBase -lfwSignal -lpthread
 
