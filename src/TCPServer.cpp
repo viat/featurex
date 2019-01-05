@@ -26,6 +26,7 @@
 #include "VIATUtilities.h"	// some helper functions
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
+#include <iostream>
 
 using boost::asio::ip::tcp;
 
